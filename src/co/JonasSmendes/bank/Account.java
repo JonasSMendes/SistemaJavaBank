@@ -42,15 +42,12 @@ public class Account {
 
         }
 
-
-
     }
 
     public void deposito(int deposito){
         valor = valor + deposito;
         logger.out("você depositou R$" + deposito + ",sua conta agora é de R$ " + valor);
     }
-
 
     @Override
     public String toString(){
