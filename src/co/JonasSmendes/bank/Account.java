@@ -51,8 +51,8 @@ public class Account {
 
     @Override
     public String toString(){
-        String result = "A conta:" + this.name.toUpperCase() + ",Agencia:" + this.ag + ",Conta corrente:" + this.cc +
-                "está com o saldo de: R$" + this.valor;
+        String result = "A conta:" + this.name + ",Agencia:" + this.ag + ",Conta corrente:" + this.cc +
+                ",está com o saldo de: R$" + this.valor;
 
         return result;
     }
