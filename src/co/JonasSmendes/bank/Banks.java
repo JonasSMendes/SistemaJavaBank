@@ -14,6 +14,10 @@ public class Banks {
         this.accounts = new ArrayList<>();
     }
 
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
     public void insertAccount(Account account){
         accounts.add(account);
     }
@@ -23,5 +27,15 @@ public class Banks {
         LastAccount++;
 
         return account;
+    }
+
+    public void outputtotal(){
+        int total = 0;
+        for (Account ac : accounts){
+           int balance = ac.getValor();
+           total += balance;
+        }
+
+        System.out.println("O banco possui agora:" + total);
     }
 }

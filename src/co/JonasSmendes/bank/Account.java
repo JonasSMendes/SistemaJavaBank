@@ -49,9 +49,13 @@ public class Account {
         logger.out("você depositou R$" + deposito + ",sua conta agora é de R$ " + valor);
     }
 
+    public int getValor(){
+        return valor;
+    }
+
     @Override
     public String toString(){
-        String result = "A conta:" + this.name + ",Agencia:" + this.ag + ",Conta corrente:" + this.cc +
+        String result = "A conta:" + this.name + ",Agencia:" + this.ag + " / " + this.cc +
                 ",está com o saldo de: R$" + this.valor;
 
         return result;

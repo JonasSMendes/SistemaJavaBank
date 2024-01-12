@@ -1,6 +1,7 @@
 package co.JonasSmendes.bank;
 
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -42,6 +43,13 @@ public class App {
             }
 
         }
+
+        List<Account> accountList = santander.getAccounts();
+        for (Account cc : accountList){
+            System.out.println(cc);
+        }
+
+        santander.outputtotal();
 
     }
 
